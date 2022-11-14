@@ -1,0 +1,28 @@
+@forward "../base/reset";
+@use "../abstracts/color" as *;
+
+body {
+	height: 100%;
+}
+.container {
+	height: 98vh;
+}
+.topContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 40%;
+	background-image: url(../images/pattern-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.valueWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#map {
+	height: 180px;
+}

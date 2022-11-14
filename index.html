@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+		<title>Frontend Mentor | IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main class="container">
+			<div class="topContent">
+				<h1>IP Address Tracker</h1>
+				<form method="get">
+					<input
+						type="text"
+						placeholder="Search for any IP address or domain"
+						class="seatchInput"
+					/>
+					<input type="submit" value=">" class="submitInput" />
+				</form>
+			</div>
+			<div class="valueWrapper">
+				<div class="ipWrapper">
+					<h2>Ip addres</h2>
+					<p class="ipValue"></p>
+				</div>
+				<div class="locationWrapper">
+					<h2>Location</h2>
+					<p class="locationValue"></p>
+				</div>
+				<div class="timezonWrapper">
+					<h2>TIMEZONE</h2>
+					<p class="timeValue"></p>
+				</div>
+				<div class="ispWrapper">
+					<h2>ISP</h2>
+					<p class="ispValue"></p>
+				</div>
+			</div>
+			<div class="mapWrapper">
+				<div id="map"></div>
+			</div>
+		</main>
+    <footer>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+		</div>
+	</body>
 </html>
