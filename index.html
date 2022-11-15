@@ -6,6 +6,17 @@
 		<!-- displays site properly based on user's device -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+			integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+			crossorigin=""
+		/>
+		<script
+			src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+			integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+			crossorigin=""
+		></script>
+		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
@@ -29,46 +40,53 @@
 		<main class="container">
 			<div class="topContent">
 				<h1>IP Address Tracker</h1>
-				<form method="get">
+				<form method="get" class="searchForm">
 					<input
 						type="text"
 						placeholder="Search for any IP address or domain"
-						class="seatchInput"
+						class="searchInput"
 					/>
-					<input type="submit" value=">" class="submitInput" />
+					<input
+						type="submit"
+						class="submitInput arr"
+						value="&#8203;"
+					/>
 				</form>
 			</div>
 			<div class="valueWrapper">
-				<div class="ipWrapper">
-					<h2>Ip addres</h2>
-					<p class="ipValue"></p>
-				</div>
-				<div class="locationWrapper">
-					<h2>Location</h2>
-					<p class="locationValue"></p>
-				</div>
-				<div class="timezonWrapper">
-					<h2>TIMEZONE</h2>
-					<p class="timeValue"></p>
-				</div>
-				<div class="ispWrapper">
-					<h2>ISP</h2>
-					<p class="ispValue"></p>
+				<div class="wrapperContent">
+					<div class="ipWrapper wrap">
+						<h2>Ip addres</h2>
+						<p class="ipValue"></p>
+					</div>
+					<div class="locationWrapper wrap">
+						<h2>Location</h2>
+						<p class="locationValue"></p>
+					</div>
+					<div class="timezonWrapper wrap">
+						<h2>TIMEZONE</h2>
+						<p class="timeValue"></p>
+					</div>
+					<div class="ispWrapper wrap">
+						<h2>ISP</h2>
+						<p class="ispValue"></p>
+					</div>
 				</div>
 			</div>
 			<div class="mapWrapper">
 				<div id="map"></div>
 			</div>
 		</main>
-    <footer>
-		<div class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-    </footer>
-		</div>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Your Name Here</a>.
+			</div>
+		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
