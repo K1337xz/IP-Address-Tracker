@@ -30,8 +30,9 @@ submitInput.addEventListener("click", async (e) => {
 			ispVal.textContent = data.isp;
 			lon = data.location.lng;
 			lat = data.location.lat;
+			searchIp.value = ``;
 			var marker = L.marker([lat, lon], { icon: myIcon }).addTo(map);
-			marker.bindPopup(`Current IP ${searchIp.value}`).openPopup();
+			marker.bindPopup(`Current IP ${data.ip}`).openPopup();
 			map.flyTo([lat, lon], 13);
 		}
 	} catch (e) {
