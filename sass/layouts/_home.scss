@@ -94,6 +94,12 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		height: 7vh;
+		&:hover {
+			background-color: $verydarkGray;
+		}
+	}
+	&:hover {
+		background-color: $verydarkGray;
 	}
 }
 #map {

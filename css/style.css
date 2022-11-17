@@ -108,6 +108,12 @@ body {
   background-position: center;
   height: 7vh;
 }
+.submitInput.arr:hover {
+  background-color: hsl(0deg, 0%, 17%);
+}
+.submitInput:hover {
+  background-color: hsl(0deg, 0%, 17%);
+}
 
 #map {
   height: 60vh;
